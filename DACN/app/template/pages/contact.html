@@ -1,0 +1,54 @@
+
+{% extends "pages/base.html" %}
+{% block title %}LIÊN HỆ{% endblock %}
+
+{% block content %}
+{% load staticfiles %}
+ 
+      <!-- contact -->
+     <div class="contact">
+         <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                     <div class="titlepage text_align_left">
+                        <h2>Liên hệ với chúng tôi</h2>
+                     </div>
+                  </div>
+            </div>
+            <div class="row">
+               <div class="col-md-6">
+                  <form id="request" class="main_form">
+                     <div class="row">
+                        <div class="col-md-12 ">
+                           <input class="contactus" placeholder="Họ và Tên" type="type" name=" Name"> 
+                        </div>
+                        <div class="col-md-12">
+                           <input class="contactus" placeholder="Số điện thoại" type="type" name="Phone Number">                          
+                        </div>
+                        <div class="col-md-12">
+                           <input class="contactus" placeholder="Email" type="type" name="Email"> 
+                        </div>
+                        <div class="col-md-12">
+                           <textarea class="textarea" placeholder="Nội dung" type="type" Message="Name"></textarea>
+                        </div>
+                        <div class="col-md-12">
+                           <button class="send_btn">Gửi</button>
+                        </div>
+                        </br>
+                     </div>
+                  </form>
+               </div>
+                <div class="col-md-6">
+                  <div class="map-responsive">
+                     <iframe src="https://map.coccoc.com/map/2955493904608158" width="600" height="540" frameborder="0" style="border:0; width: 100%;" allowfullscreen=""></iframe>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end contact -->
+      </br>
+<div>
+
+
+{% endblock %}

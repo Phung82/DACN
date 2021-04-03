@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+   {% load staticfiles %}
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>GIỚI THIỆU</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
+      <!-- style css -->
+      <link rel="stylesheet" href="{% static 'css/style.css'%} ">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="{% static 'css/responsive.css'%}">
+      <!-- fevicon -->
+      <link rel="icon" href="{% static 'images/fevicon.png'%} " type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+       <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css'%} "> 
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+      <title> {% block title %} {% endblock %} </title>
+   </head>
+   <!-- body -->
+   <body class="main-layout inner_page">
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="{% static 'images/loading.gif' %}" alt="#"/></div>
+      </div>
+      <!-- end loader -->
+      <!-- top -->
+       <!-- header -->
+         <header class="header-area">
+            <div class="left">
+               <a href="Javascript:void(0)"><i class="fa fa-search" aria-hidden="true"></i></a>
+            </div>
+            <div class="right">
+               <a href="Javascript:void(0)"><i class="fa fa-user" aria-hidden="true"></i></a>
+            </div>
+            <div class="container">
+               <div class="row d_flex">
+                  <div class="col-sm-3 logo_sm">
+                     <div class="logo">
+                        <a href="/"></a>
+                     </div>
+                  </div>
+                  <div class="col-lg-12 offset-lg-1 col-md-12 col-sm-9">
+                     <div class="navbar-area">
+                        <nav class="site-navbar">
+                           <ul>
+                              <li><a class="active" href="/">Trang Chủ</a></li>
+                              <li><a href="{% url 'abouttt' %}">Giới Thiệu</a></li>
+                              <li><a href="{% url 'chandoannn' %}">Chẩn Đoán</a></li>
+                              <li><a target="_blank"  href="https://coccoc.com/search?query=covid-19&shared=1&showCoronaMap=1&tab=0" class="logo_midle">covido</a></li>
+                              <li><a href="#">tin tức</a></li>
+                              <li><a href="#">thông tin</a></li>
+                               
+                              <li><a href="{% url 'lienheee' %}">liên hệ</a></li>
+                           </ul>
+                           <button class="nav-toggler">
+                           <span></span>
+                           </button>
+                        </nav>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </header>
+      <!-- end header -->
+      <!-- about -->
+      <div class="about">
+         <div class="container_width">
+            <div class="row d_flex">
+                   <div class="col-md-7">
+                  <div class="titlepage text_align_left">
+                     <h2>About Corona Virus </h2>
+                     <p>English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for
+                     </p>
+                     <a class="read_more" href="about.html">About More</a>
+                  </div>
+               </div>
+               <div class="col-md-5">
+                  <div class="about_img text_align_center">
+                     <figure><img src="{% static 'images/about.png' %}" alt="#"/></figure>
+                  </div>
+               </div>
+              
+            </div>
+         </div>
+      </div>
+      <!-- end about -->
+            <!--  footer -->
+      <footer>
+         <div class="footer">
+            <div class="container">
+               <div class="row">
+                        <div class="col-lg-2 col-md-6 col-sm-6">
+                           <div class="hedingh3 text_align_left">
+                              <h3>Resources</h3>
+                              <ul class="menu_footer">
+                                 <li><a href="/">Trang chủ</a><li>
+                                 <li><a href="javascript:void(0)">Bảo vệ</a><li>
+                                 <li> <a href="javascript:void(0)">Tư vấn</a><li>
+                                 <li> <a href="javascript:void(0)">Chăm sóc</a><li>
+                                 <li><a href="javascript:void(0)">Truyền thông</a><li>
+                                 <li><a href="javascript:void(0)">Chúng ta làm gì</a><li>
+                              </ul>
+                             
+           
+                           </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                           <div class="hedingh3 text_align_left">
+                             <h3>Giới thiệu</h3>
+                              <p>Ứng dụng có đầy đủ các chức năng hỗ trợ bác sĩ trong việc quan sát, gán nhãn hình ảnh X-quang tim phổi X (phóng to thu nhỏ, thay đổi độ sáng tối, tương phản; chế độ xem toàn màn hình; chế độ đo kích thước trên ảnh...)</p>
+                           </div>
+                        </div>
+                     
+                
+                       
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                           <div class="hedingh3  text_align_left">
+                              <h3>Liên hệ với chúng tôi</h3>
+                                <ul class="top_infomation">
+                        <li><i class="fa fa-map-marker" aria-hidden="true"></i>
+                           Hãy liên hệ với chúng tôi   
+                        </li>
+                        <li><i class="fa fa-phone" aria-hidden="true"></i>
+                           Call : 098 117 2400
+                        </li>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i>
+                           <a href="Javascript:void(0)">Email : nguyentieuphung82@gmail.com</a>
+                        </li>
+                     </ul>
+                            
+                           
+                     </div>
+                  </div>
+                     <div class="col-lg-4 col-md-6 col-sm-6">
+                           <div class="hedingh3 text_align_left">
+                              <h3>Vị Trí</h3>
+                              <div class="map">
+                                <img src="{% static 'images/map.png' %}" alt="#"/>
+                              </div>
+                           </div>
+                        </div>
+                    
+               </div>
+            </div>
+            <div class="copyright">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-8 offset-md-2">
+                        <p>© 2020 All Rights Reserved. Design by <a href="#">SmallBird</a></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="{% static 'js/jquery.min.js' %}"></script>
+      <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+      <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+      <script src="{% static 'js/custom.js' %}"></script>
+   </body>
+</html>
